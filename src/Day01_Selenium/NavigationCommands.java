@@ -22,15 +22,20 @@ Close the Browser.
 
         WebDriver driver=new ChromeDriver();
 
+
         // Clarusway sitesine gittik
         driver.navigate().to("https://clarusway.com/");
         // amazon sitesine gittik
         driver.navigate().to("https://amazon.com/");
 
+        // geri tusuyla claruswaye geri dnduk
         driver.navigate().back();
 
+        // Sayfamizi amazona geri dondurduk
         driver.navigate().forward();
+        // Sayfamizi Yeniledik
         driver.navigate().refresh();
+        // Sayfamizi Kapattik
         driver.close();
 
 
