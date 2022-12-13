@@ -34,8 +34,8 @@ public class C02_ManageWindowCommands {
         //browser imizin pozisyonunu (190, 70) olarak set ettik.
         driver.manage().window().setPosition(new Point(190,70));
 
-        //browser imizin boyutunu (800, 600) set ettik.
-        driver.manage().window().setSize(new Dimension(800,600));
+        //browser imizin boyutunu (800, 1000) set ettik.
+        driver.manage().window().setSize(new Dimension(800,1000));
 
         //browser imizin boyutunu dogruluyoruz
 
@@ -45,7 +45,7 @@ public class C02_ManageWindowCommands {
 
         System.out.println("Browser in boyutu test ediliyor....");
 
-        if (width == 800 && height == 600){
+        if (width == 800 && height == 1000){
             System.out.println("Boyut testi PASSED");
         }else {
             System.out.println("Boyut testi FAILED");
