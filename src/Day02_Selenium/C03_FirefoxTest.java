@@ -15,6 +15,24 @@ public class C03_FirefoxTest {
 
 
         WebDriver driver = new FirefoxDriver();
+        //https://www.youtube.com/ adresini ziyaret ettik
+
+        driver.get("https://www.youtube.com/");
+        System.out.println("Title testi yapiliyor");
+        String pageTitle = driver.getTitle();
+
+        if (pageTitle.contains("video")) {
+            System.out.println("Title testi PASSED");
+        }else{
+            System.out.println("Title testi FAILED");
+        }
+
+        //driver objemizi kapattik
+        driver.quit();
+
+
+
+
 
 
 
