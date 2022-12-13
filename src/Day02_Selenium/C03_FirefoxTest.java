@@ -13,10 +13,11 @@ public class C03_FirefoxTest {
 
         System.setProperty("webdriver.gecko.driver", "Dependencies/drivers/geckodriver.exe");
 
-
+        //Driver objemizi olusturuyoruz
         WebDriver driver = new FirefoxDriver();
-        //https://www.youtube.com/ adresini ziyaret ettik
 
+
+        //https://www.youtube.com/ adresini ziyaret ettik
         driver.get("https://www.youtube.com/");
         System.out.println("Title testi yapiliyor");
         String pageTitle = driver.getTitle();

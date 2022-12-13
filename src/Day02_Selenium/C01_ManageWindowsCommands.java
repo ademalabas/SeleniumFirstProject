@@ -8,7 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class C01_ManageWindowsCommands {
 
     public static void main(String[] args) throws InterruptedException {
+
 //        Invoke Chrome Browser
+
 //        Open URL: https://www.google.com/
 //        Maximize the window.
 //        Print the position and size of the page.
