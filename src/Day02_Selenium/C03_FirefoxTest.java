@@ -22,7 +22,7 @@ public class C03_FirefoxTest {
         System.out.println("Title testi yapiliyor");
         String pageTitle = driver.getTitle();
 
-        if (pageTitle.contains("video")) {
+        if (pageTitle.contains("You")) {
             System.out.println("Title testi PASSED");
         }else{
             System.out.println("Title testi FAILED");

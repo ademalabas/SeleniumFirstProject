@@ -22,13 +22,13 @@ public class C05_PageSourceTest {
         String pageSource = driver.getPageSource();
         // page source testimizi yaptik
         System.out.println("Page test source testi yapiliyor");
-
+      //  System.out.println("driver.getPageSource() = " + driver.getPageSource());
         if (pageSource.contains("Performance Matrics") && pageSource.contains("MEOW")){
             System.out.println("test passed");
         }else System.out.println("test failed");
 
         // driverimizi kapattik
-        driver.quit();
+       // driver.quit();
 
 
 

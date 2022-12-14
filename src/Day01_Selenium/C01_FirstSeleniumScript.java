@@ -19,7 +19,8 @@ WebDriver driver = new ChromeDriver();
     public static void main(String[] args) {
         //1. adim Crome pathini belirledik
         System.setProperty("webdriver.chrome.driver","Dependencies\\drivers\\chromedriver.exe");
-        // 2. adim driver bjesini nolusturduk
+
+        // 2. adim driver Objesini nolusturduk
         WebDriver driver=new ChromeDriver();
 
         //3. adim

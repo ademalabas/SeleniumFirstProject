@@ -31,7 +31,7 @@ Close the Browser.
         // geri tusuyla claruswaye geri dnduk
         driver.navigate().back();
 
-        // Sayfamizi amazona geri dondurduk
+        // Sayfamizi amazona ILERI dondurduk
         driver.navigate().forward();
         // Sayfamizi Yeniledik
         driver.navigate().refresh();

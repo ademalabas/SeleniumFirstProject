@@ -35,6 +35,7 @@ public class C01_ManageWindowsCommands {
 
         // Browser imizin suanki pozisyonunu verir.
         Point point = driver.manage().window().getPosition();
+       // System.out.println("driver.manage().window().getPosition() = " + driver.manage().window().getPosition());
 
         // Pozisyonumuzun koordinat degerlerini degiskenlerimize atadik
         int posX = point.getX();
@@ -45,6 +46,7 @@ public class C01_ManageWindowsCommands {
 
         // Browser imizin size ini (boyutunu) verir
         Dimension dimension = driver.manage().window().getSize();
+        System.out.println("driver.manage().window().getSize() = " + driver.manage().window().getSize());
 
         //Browserimizin genislik ve yukseklik degerlerini degiskenlerde tutacagiz
         int h = driver.manage().window().getSize().getHeight();
@@ -86,7 +88,7 @@ public class C01_ManageWindowsCommands {
         driver.manage().window().fullscreen();
 
         //driver imizi kapatiyoruz
-        driver.quit();
+       driver.quit();
 
     }
 
