@@ -17,8 +17,10 @@ public class C04_FaceBookURLTest {
         //  Driver imizin yolunu javaya tanittik.
         System.setProperty("webdriver.chrome.driver","Dependencies\\drivers\\chromedriver.exe");
 
+
         //Driver objemizi olusturuyoruz
         WebDriver driver = new ChromeDriver();
+
 
         //Facebook sayfamiza gidiyoruz
         driver.get("https://www.facebook.com/");
@@ -27,6 +29,7 @@ public class C04_FaceBookURLTest {
         String expectedURL = "https://www.facebook.com/";
         String actualURL = "https://www.facebook.com/";
 
+
         if (expectedURL.equals(actualURL)){
             System.out.println("URL testi Passed");
 
@@ -34,11 +37,13 @@ public class C04_FaceBookURLTest {
             System.out.println("URL testi failed");
         }
 
+
         //Title Testimizi Yaptik
         String title = driver.getTitle();
         if (title.contains("Facebook")) {
             System.out.println("Title test passed");
         }else System.out.println("Title test failed");
+
 
         // Driveri Kapattik
         driver.quit();
