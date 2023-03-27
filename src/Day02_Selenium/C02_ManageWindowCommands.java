@@ -35,9 +35,11 @@ public class C02_ManageWindowCommands {
         driver.manage().window().setPosition(new Point(190,70));
         System.out.println("driver.manage().window().getPosition() = " + driver.manage().window().getPosition());
 
+
         //browser imizin boyutunu (800, 1000) set ettik.
         driver.manage().window().setSize(new Dimension(517,500));
         System.out.println("driver.manage().window().getSize() = " + driver.manage().window().getSize());
+
 
         //browser imizin boyutunu dogruluyoruz
 
