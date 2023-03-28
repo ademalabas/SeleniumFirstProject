@@ -3,6 +3,7 @@ package Day02_Selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class C05_PageSourceTest {
     public static void main(String[] args) {
 
@@ -16,6 +17,7 @@ public class C05_PageSourceTest {
         //Driver objemizi olusturuyoruz
         WebDriver driver = new ChromeDriver();
 
+
         //amazon sayfamiza gidiyoruz
         driver.get("https://www.amazon.com/");
         // page sorcu aldik
@@ -26,6 +28,7 @@ public class C05_PageSourceTest {
         if (pageSource.contains("Performance Matrics") && pageSource.contains("MEOW")){
             System.out.println("test passed");
         }else System.out.println("test failed");
+
 
         // driverimizi kapattik
        // driver.quit();
